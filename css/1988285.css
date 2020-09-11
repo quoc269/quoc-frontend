@@ -1,0 +1,298 @@
+/*header*/
+body{
+    font-family:'Trebuchet MS',Helvetica ,Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7c7c7c;
+}
+
+#menu li a{
+ 
+    font-family: 'Changa One', cursive;
+    color:#333333;
+    
+}
+
+#menu li a:hover,
+#menu li.active a {
+    color:#2fa0d5;
+}
+
+#frm-search{
+    display: block;
+    width: 169px;
+    height: 32px;
+    border: 1px solid #d5d5d5;
+    padding: 4px 11px 6px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    margin: 0 10px;
+}
+
+#searchword{
+    border: none;
+    background:white;
+    box-shadow: 0 0 0;
+    padding:0 ;
+}
+
+#btn-search{
+    border: none;
+    width: 18px;
+    background:url(../images/search_button.png) 0 0 no-repeat;
+
+}
+
+#social a {
+    display:inline-block;
+    margin-left: 5px;
+    height: 25px;
+    width: 27px;
+    cursor: pointer;
+}
+#social a.twitter{
+    background:url(../images/twitter.png) 0 0 no-repeat;
+}
+
+#social a.facebook{
+    background:url(../images/facebook.png) 0 0 no-repeat;
+}
+
+#social a.twitter:hover {
+    background:url(../images/twitter_active.png) 0 0 no-repeat;
+}
+
+#social a.facebook:hover {
+    background:url(../images/facebook_active.png) 0 0 no-repeat;
+}
+/* /header*/
+/*banner*/
+#banner {
+    background:url(../images/bg_slider.gif) center bottom repeat;
+    color:white;
+    padding: 110px 0 40px; 
+}
+#banner h4{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 1px;
+    font-family: 'Changa One', cursive;
+}
+
+#btn-menu{
+    display:inline-block;
+    font:30px 'Changa One', cursive;
+    background-color:#fa97c2;
+    line-height: 36px;
+    padding:14px 67px;
+    border-radius:14px;
+    text-transform: uppercase;
+    text-decoration:none;
+    margin:30px 0;
+    color:white;
+
+}
+#dots{
+    list-style: none;
+    line-height: 19px;
+    height: 19px;
+    text-align:center;
+    padding: 0;
+}
+#dots li {
+    display: inline-block;
+    width:19px;
+    height: 19px;
+    border-radius: 19px;
+    text-align: left;
+    text-indent:9999px;
+    background: white;
+    margin:0 2px;
+    position: relative;
+}
+#dots li span{
+    width: 9px;
+    line-height: 9px;
+    border-radius: 9px;
+    position:absolute;
+    top:5px;
+    left:5px;
+   
+}
+#dots li.active span, 
+#dots li:hover span{
+    box-shadow: 0;
+    background:#73c926;
+}
+@media screen and (min-width: 768px) {
+
+#logo{
+    position:relative;
+}
+
+#logo:after{
+    position: absolute;
+    content:"";
+    background:url(../images/logo_bg.png) 0 0 no-repeat;
+    width: 188px ;
+    height: 133px;
+    bottom: -140px;
+    left: -2px;
+}
+
+
+#frm-search{
+    position:relative;
+   
+}
+
+#frm-search:after{
+    position:absolute;
+    content:"";
+    background: url(../images/search_bg.png) 0 0 no-repeat;
+    height: 44px;
+    width: 230px;    
+    left: 10px;
+    bottom: -70px;    
+}
+#products h4{
+    font-family: 'Changa One', cursive;
+    font-weight: 400;
+    font-size: 26px;
+    margin: 10px 0;
+    color:#333333;
+}
+#products a {
+    text-decoration:underline;
+    color:#2fa0d5;
+}
+/*/porducts*/
+/*About*/
+a.readmore{
+    text-decoration:underline;
+    color:#2fa0d5;
+}
+
+div.about{
+    background:#fa97c2;
+    color: #814e64;
+}
+#about-us h3{
+    font-family: 'Changa One', cursive;
+    font-size:60px;
+    color:white;
+}
+#about-us img{ 
+    float:left;
+    margin:20px;
+}
+#frm-about{
+    border:5px dotted;
+    border-radius: 14px;   
+    text-align:justify;
+     
+}
+#frm-about h3{
+    font-family: 'Changa One', cursive;
+    font-size: 40px;
+    color:white;
+}
+#frm-about input{
+    background-color: white;
+    border-radius:14px;
+    border:none;
+    height: 30px;
+    width: 100%;
+    box-shadow: 0 0 0;
+
+}
+
+#frm-about  button {
+    background-color: black;
+    border:none;
+    border-radius:14px;
+    color:white;
+    padding:10px;
+    text-transform: uppercase;
+    
+}
+
+.btn-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    border: none;
+    padding:10px;
+    margin:20px;
+}
+/*/about*/
+/*News  */
+#news h3 {
+    font: 60px 'Changa One', cursive;
+    padding:30px;
+}
+div.left-float{
+    float:left;
+   
+}
+
+div.right-float{
+    float: right;
+}
+#news .date{
+    border:none;
+    color:white;
+    border-radius:14px;
+    background-color:green;
+    height: 90px;
+    width:70px;
+    font: 30px 'Changa One', cursive;
+    text-align:center;
+    padding: 5px;
+      
+}
+#news h4 {
+    font: 30px 'Changa One', cursive;
+    color:black;
+}
+/*footer*/
+#footer{
+    background:url(../images/bg.gif) 0 0 repeat;
+    text-align: center;
+}
+#footer ul {
+    list-style:none;
+   
+}
+#footer ul li{
+    display: inline-block;
+    margin:50px;
+}
+
+
+#footer li a{
+    color: white;
+    text-decoration: none;
+}
+#footer li a.active,
+#footer li a:hover{
+color:rgb(245, 112, 134) /*Hoi co lam sao tat duoc the co thuoc tinh active?*/
+}
+#copy-right{
+    color: #7c7c7c;
+
+}
+a.privacy-policy{
+    color: #7c7c7c;
+    text-decoration:none;
+
+}
+.privacy-policy:hover{
+    color:white;
+}
+
+
+   
+}
