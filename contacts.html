@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="shorcut icon" href="images/favicon.ico " type="image/x-icon" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa+One" type="text/css" />
-    <link rel="stylesheet" href="css/1988285-menu.css" type="text/css" />
+    <link rel="stylesheet" href="css/1988285-contacts.css" type="text/css" />
 </head>
 
 <body>
@@ -65,72 +65,88 @@
 
     </div>
     <!--/small-banner-->
-    <!--Menu-->
-    <div class="container-fluid">
-        <div class="container" id="gallery">
-            <h3>Menu</h3>
-            <p>Filter by category:</p>
-
-
-
-            <div class="container" id="bar-nav">
-                <ul class="nav align-content-start ">
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Show all</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">First Category</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Second Category</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Third Category</a>
-                    </li>
-
-
-                </ul>
-            </div>
-            <div class="container" id="gl-menu">
-                <div class="row m-3">
-                    <div class="col-md-3">
-                        <img src="images/gallery/gallery-thumb1.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/gallery/gallery-thumb2.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/gallery/gallery-thumb3.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/gallery/gallery-thumb4.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                </div>
-                <div class="row m-3">
-                    <div class="col-md-3 ">
-                        <img src="images/gallery/gallery-thumb6.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                    <div class="col-md-3 ">
-                        <img src="images/gallery/gallery-thumb7.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                    <div class="col-md-3 ">
-                        <img src="images/gallery/gallery-thumb8.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                    <div class="col-md-3 ">
-                        <img src="images/gallery/gallery-thumb9.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                </div>
-                <div class="row m-3">
-                    <div class="col-md-3">
-                        <img src="images/gallery/gallery-thumb10.jpg" alt="" class="img-thumbnail" />
-                    </div>
-
-                </div>
+    <!--Contacts-->
+    <div class="container-fluid" id="contacts">
+        <div class="container">
+            <h3>Contacts</h3>
+            <div class="container" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22164.342931473995!2d106.6189316680738!3d10.877008177199935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1599914156697!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
+        <div class="row">
+
+            <div class="col-md-4">
+                <h3>Address:</h3>
+                <div>
+                    <p>227 Nguyen Van Cu Street
+                        District 5</p>
+                    <p>Hochiminh City, Vietnam</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>Phones:</h3>
+                <div>
+                    <p>+1 800 559 6580</p>
+                    <p>+1 504 889 9898</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>E-mail: </h3>
+                <div>
+                    <p>mail@demolink.org</p>
+                    <p> Illinois 121164</p>
+                </div>
+            </div>
 
 
-    </div> <!--/Menu-->
+        </div> <!--/address-->
+
+        <!--Miscell-->
+        <div>
+            <h3>Miscellaneous information:</h3>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Velit numquam doloribus corporis aliquam, ab architecto magnam rerum neque laudantium, voluptas itaque pariatur
+                 at aut voluptatum cupiditate libero perspiciatis, esse eaque.
+            </div>
+            <p>Send an email. All fields with an * are required.</p>
+            <div>
+                <div class="container" id="frm-contacts">
+                    <div class="row" >
+                        <div class="col-md-4">
+                            <label for="un">Name *</label> <br>
+                            <input type="text" id="un" name="un" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="em">Email *</label> <br>
+                            <input type="text" id="em" name="em" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="sj">Subject *</label> <br>
+                            <input type="text" id="sj" name="sj" />
+                        </div>
+                    </div>
+                    <div class="container"> 
+                        <label for="txtaContacts">Mesages *</label> <br>
+                        <textarea rows="10" cols="120" name="txaContacts" id="txaContacts" ></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+
+                    </div>
+                    <div class="col-md-3">
+                        <label for="ck">Send copy to yourself</label> 
+                        <input type="checkbox" id="ck" name="ck" /> 
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">Send Email</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div><!--/Miscell-->
+    </div> <!--/contacts-->
 
     <!--footer-->
     <div class="container-fluid " id=footer>
