@@ -12,6 +12,8 @@
     <link rel="shorcut icon" href="images/favicon.ico " type="image/x-icon" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa+One" type="text/css" />
     <link rel="stylesheet" href="css/1988285.css" type="text/css" />
+    <link rel="stylesheet" href="css/banner.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -61,169 +63,203 @@
     </header>
     <!--/header-->
     <!--/navigation-->
-    <!--banner-->
-    <div class="container-fluid" id="banner">
-        <div class="conainer text-center">
-            <h4>Tasty cakes and ice-cream <br> for everyone</h4>
-            <div>
-                <a id="btn-menu" href="menu.html">see our menu</a>
-            </div>
-            <ul id="dots">
-                <li class="active"><span>0</span></li>
-                <li><span>1</span< /li>
-                <li><span>2</span< /li>
-            </ul>
-        </div>
-    </div>
-    <!--/banner-->
-    <!--main-->
-    <div class="cotainer" id="products">
-        <div class="row my-5">
-            <div class="col text-center">
-                <img src="images/icon-1.png" />
-                <h4>Coffee</h4>
-                <div class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                <a href="#">Readmore</a>
-            </div>
-            <div class="col text-center">
-                <img src="images/icon-2.png" />
-                <h4>Drinks</h4>
-                <div class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                <a href="#">Readmore</a>
-            </div>
-            <div class="col text-center">
-                <img src="images/icon-3.png" />
-                <h4>Cakes</h4>
-                <div class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                <a href="#">Readmore</a>
-            </div>
-            <div class="col text-center">
-                <img src="images/icon-4.png" />
-                <h4>ice-creams</h4>
-                <div class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                <a href="#">Readmore</a>
-            </div>
-        </div>
-    </div>
-    <!--/main-->
-    <!--about-->
-    <div class="container-fluid about py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9" id="about-us">
-                    <h3>About us</h3>
-                    <div>
-                        <img src="images/icon-about.png" alt="icon-about.png" />
-
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corrupti ea facilis
-                            doloremque
-                            nihil, eveniet natus magnam illum odio voluptatem maxime ab praesentium velit autem esse
-                            deleniti ullam quisquam. Similique?</div>
-                        <div class="pt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae rem possimus,
-                            quis voluptas
-                            amet nisi.<a class="readmore" href="#">Read more</a></div>
+    <!--details-->
+    <div id="details">
 
 
-                    </div>
+        <!--banner-->
+        <div class="container-fluid" id="banner">
+           <div class="container">
+            <div class="conainer text-center">
+                <h4>Tasty cakes and ice-cream <br> for everyone</h4>
+                <div>
+                    <a id="btn-menu" href="menu.html">see our menu</a>
                 </div>
-                <div class="col-md-3 table-responsive-md" id="frm-about">
-                    <form>
-                        <h3>Newsletter <br> Sign up</h3>
-                        <!--Hoi co sao thu nho lai thi khong reponsive duoc-->
-                        <div>Please, write an e-mail:</div>
-                        <div class="btn-center">
-                            <input type="mail" name="email" required />
+                <ul id="dots">
+                    <li class="active"><span>0</span></li>
+                    <li><span>1</span> </li>
+                    <li><span>2</span> </li>
+                </ul>
+            </div>
+        </div> 
+        </div>
+        <!--/banner-->
+        <!--main-->
+        <div class="cotainer" id="products">
+            <div class="row my-5" id="products-hdbar">
+
+
+            </div>
+        </div>
+        <!--/main-->
+        <!--about-->
+        <div class="container-fluid about py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9" id="about-us">
+                        <h3>About us</h3>
+                        <div>
+                            <img src="images/icon-about.png" alt="icon-about.png" />
+
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum corrupti ea facilis
+                                doloremque
+                                nihil, eveniet natus magnam illum odio voluptatem maxime ab praesentium velit autem esse
+                                deleniti ullam quisquam. Similique?</div>
+                            <div class="pt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae rem
+                                possimus,
+                                quis voluptas
+                                amet nisi.<a class="readmore" href="#">Read more</a></div>
+
+
                         </div>
-                        <div class="btn-center">
-                            <button type="submit">sign up</button>
-                            <!--chinh btn submit canh giua khac co xiu, khong biet co bi la khong :(-->
-                        </div>
+                    </div>
+                    <div class="col-md-3 table-responsive-md" id="frm-about">
+                        <form>
+                            <h3>Newsletter <br> Sign up</h3>
+                            <!--Hoi co sao thu nho lai thi khong reponsive duoc-->
+                            <div>Please, write an e-mail:</div>
+                            <div class="btn-center">
+                                <input type="mail" name="email" required />
+                            </div>
+                            <div class="btn-center">
+                                <button type="submit">sign up</button>
+                                <!--chinh btn submit canh giua khac co xiu, khong biet co bi la khong :(-->
+                            </div>
 
-                    </form>
+                        </form>
+                    </div>
                 </div>
+
             </div>
 
         </div>
+        <!--about-->
+        <!--News-->
+        <div class="container py-5 " id="news">
+            <h3>News</h3>
+            <div class="row" id="news-model">
 
-    </div>
-    <!--about-->
-    <!--News-->
-    <div class="container py-5 " id="news">
-        <h3>News</h3>
-        <div class="row">
-            <div class="col">
-                <div class="col-sm-4 left-float">
-                    <div class="date">Dec. 25.</div>
-                    <a href="readmore">Read more</a>
-                </div>
-              
-                <div class="col-sm-8 right-float" >
-                    <h4>Accumsan</h4>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Asperiores, ex reiciendis!
-                        Magni veritatis consequuntur quidem?
-                    </div>
-                </div>
+
 
             </div>
-            <div class="col">
-                <div class="col-sm-4 left-float">
-                    <div class="date">Dec. 25.</div>
-                    <a href="readmore">Read more</a>
-                </div>
-              
-                <div class="col-sm-8 right-float" >
-                    <h4>Typi non habent</h4>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Asperiores, ex reiciendis!
-                        Magni veritatis consequuntur quidem?
-                    </div>
-                </div>
-
-            </div>
-            <div class="col">
-                <div class="col-sm-4 left-float">
-                    <div class="date">Dec. 25.</div>
-                    <a href="readmore">Read more</a>
-                </div>
-              
-                <div class="col-sm-8 right-float" >
-                    <h4>Claritas est etiam</h4>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Asperiores, ex reiciendis!
-                        Magni veritatis consequuntur quidem?
-                    </div>
-                </div>
-
-            </div>          
-
         </div>
+        <!--/News-->
     </div>
-    <!--/News-->
     <!--footer-->
     <div class="container-fluid " id=footer>
         <div class="container justify-content-end">
             <ul id="footer-menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </div>
         <div id="copyright">
-            ice-cream &copy; 2019 | <a href="#" class="privacy-policy"> PRIVACY POLICY</a>
+            ice-cream &copy; 2020 | <a href="#" class="privacy-policy"> PRIVACY POLICY</a>
         </div>
-    </div> <!--/footer-->
+    </div>
+    <!--/footer-->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v4.7.6.js"></script>
+
+    <!--handlerbar script-->
+    <!--handlebar template products-->
+    <script id="products-template" type="text/x-handlebars-template">
+        {{#each data}}
+         <div class="col text-center">
+             <img src="{{thumbpath}}" alt="{{imagepath}}"/>
+             <h4>{{name}}</h4>
+             <div class="pb-2">{{summary}}</div>
+            
+            <a href="#" onclick="loadData('products/{{id}}', '#details', '#details-template')">Readmore</a>
+         </div>
+         {{/each}}
+       </script>
+    <!--/handlebar template products-->
+
+    <!--handlebar template news-->
+    <script id="news-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class="col">
+            <div class="row"> 
+                <div class="col-sm-4 left-float">
+                    <div class="date">{{date}}</div>
+                    <a href="#" class="readmore" onclick="loadData('news/{{id}}', '#details', '#details-template')">Read more</a>
+                </div>
+
+                <div class="col-sm-8 right-float">
+                    <h4 class="text-dark">{{name}}</h4>
+                    <div>
+                        {{summary}}
+                    </div>
+                </div>
+            </div> 
+            </div> 
+            {{/each}} 
+       </script> <!--handlebar details-->
+
+    <!--handlebar template news-->
+    <!--handlebar template details-->
+    <script id="details-template" type="text/x-handlebars-template">
+        <div>
+            <!--small-banner-->
+         <div class="container-fluid" id="small-banner">
+             
+         </div>
+         <!--/small-banner-->
+         {{#each data}}
+         <div class="p-4 justify-content-center">
+             <h2 class="text-dark font-weight-bold my-4">{{name}}</h2>
+             <div>
+                 {{{description}}}           
+             </div>
+         </div>
+         {{/each}}
+         
+         </div> 
+
+       </script>
+
+    <script>
+        $(document).ready(function () {
+            //product api handlebar
+            loadData("products", "#products-hdbar", "#products-template")
+            //news api handlebar
+            loadData("news", "#news-model", "#news-template");
+
+
+        });
+
+        // funtion load data
+        function loadData(request, targetID, sourceID) {
+            $.ajax({
+                url: 'http://web1-api.herokuapp.com/api/' + request,
+                cache: false,
+                success: function (data) {
+                    let jsonData = {
+                        data: data
+                    };
+                    console.log(data);
+                    let target = $(targetID);
+                    let source = $(sourceID).html();
+                    var template = Handlebars.compile(source);
+                    $(target).html(template(jsonData));
+
+
+                }
+
+            });
+        }
+    </script>
+
 </body>
 
 </html>

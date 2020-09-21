@@ -107,7 +107,7 @@ a.privacy-policy{
 /*small-banner*/
 #small-banner{
     background:url(../images/bg_slider.gif) 0 0 repeat;
-    height: 30px;
+    height: 10px;
    
 }
 /*/small-banner*/
@@ -116,6 +116,10 @@ a.privacy-policy{
 .img-about{
     float:left;
     margin:10px;
+}
+.img-rounded{
+    border-radius: 10px;
+
 }
 #about-us h3{
     font: 70px 'Changa One', cursive;
@@ -139,4 +143,9 @@ a.privacy-policy{
     font:60px 'Changa One', cursive;
     color:white;
 
+}
+
+a.readmore{
+    text-decoration:underline;
+    color:#2fa0d5;
 }

@@ -12,6 +12,7 @@
     <link rel="shorcut icon" href="images/favicon.ico " type="image/x-icon" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa+One" type="text/css" />
     <link rel="stylesheet" href="css/1988285-about.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -26,11 +27,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end " id="menu">
                 <ul class="navbar-nav  mt-2 mt-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
@@ -62,193 +63,94 @@
     <!--/header-->
     <!--small-banner-->
     <div class="container-fluid" id="small-banner">
-        
+
     </div>
     <!--/small-banner-->
+    <!--details-->
+    <div id="details">
 
-    <!--About us-->
-    <div>
-        <div class="container-fluid py-5">
-            <div class="row" id="about-us">
-                <div class="col-md-8">
-                    <h3>About Us</h3>
-                    <div class="img-about">
-                        <img src="images/about-1.jpg" />
-                    </div>
-                    <div>
-                        <div>
-                            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
-                        </div>
-                        <div>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, optio sunt?
-                            Fugiat nam in distinctio modi ex, ratione odio repellendus
-                            reiciendis mollitia culpa excepturi natus consectetur inventore nihil, quam doloribus.
-                        </div>
-                        <a href="#" class="read-more">Read more</a>
-                    </div>
 
-                </div>
-                <div class="col-md-4" id="our-vision">
-                    <h3>Our Vision</h3>
-                    <div>
-                        <div class="img-about">
-                            <img src="images/vision/vision-1.jpg" />
+        <!--About us-->
+        <div>
+            <div class="container-fluid py-5">
+                <div class="row" id="about-us">
+                    <div class="col-md-8">
+                        <h3>About Us</h3>
+                        <div class="img-about img-rounded">
+                            <img src="images/about-1.jpg" class="img-rounded" />
                         </div>
                         <div>
-                            <h4>Accumsan et</h4>
                             <div>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Magnam animi officia qui.
+                                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
                             </div>
-                        </div>
-                        <div id="clr-both"></div>
-                        <div class="img-about">
-                            <img src="images/vision/vision-2.jpg" />
-                        </div>
-                        <div>
-                            <h4>Ut ultricies</h4>
                             <div>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Magnam animi officia qui.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, optio sunt?
+                                Fugiat nam in distinctio modi ex, ratione odio repellendus
+                                reiciendis mollitia culpa excepturi natus consectetur inventore nihil, quam doloribus.
                             </div>
+                            <a class="read-more" onclick="loadData('aboutus', '#details', '#details-template')"
+                                href="#">Read more</a>
                         </div>
+
+                    </div>
+                    <div class="col-md-4" id="our-vision">
+                        <h3>Our Vision</h3>
+                        <div id="vision-model">
+
+
+
+
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
+        </div>
+        <!--/About us-->
+
+        <!--Testimonials-->
+        <div class="container-fluid py-5" id="testimonials">
+            <h3>Testimonials</h3>
+            <div class="row" id="testimo-model">
+
+
+
+
+
+
+            </div>
+        </div>
+        <!--/Testimonials-->
+
+        <!--Our Team-->
+        <div class="container py-5">
+            <h3>Our team</h3>
+            <div class="row" id="team">
+
+
+
+            </div>
 
         </div>
+        <!--/Our team-->
+
     </div>
-    <!--/About us-->
-
-    <!--Testimonials-->
-    <div class="container-fluid py-5" id="testimonials">
-        <h3>Testimonials</h3>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="images/quot.png" alt="">
-                    </div>
-                    <div class="col-10">
-                        <p>
-                            Nam liber tempor cum soluta nobis eleifend option congue nihil
-                            imperdiet doming id quod mazim placerat facer possim assum.
-                            Typi non habent claritatem insieorum claritatem. Investigationes
-                            demonstraverunt lectores legere me lius quod ilegunt saepius...
-                        </p>
-                        <div class="text-white">Patrick Pool</div>
-                        <a href="#">info@demolink.org</a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="images/quot.png" alt="">
-                    </div>
-                    <div class="col-10">
-                        <p>
-                            Nam liber tempor cum soluta nobis eleifend option congue nihil
-                            imperdiet doming id quod mazim placerat facer possim assum.
-                            Typi non habent claritatem insieorum claritatem. Investigationes
-                            demonstraverunt lectores legere me lius quod ilegunt saepius...
-                        </p>
-                        <div class="text-white">Sam Kromstain</div>
-                        <a href="#">info@demolink.org</a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="images/quot.png" alt="">
-                    </div>
-                    <div class="col-10">
-                        <p>
-                            Nam liber tempor cum soluta nobis eleifend option congue nihil
-                            imperdiet doming id quod mazim placerat facer possim assum.
-                            Typi non habent claritatem insieorum claritatem. Investigationes
-                            demonstraverunt lectores legere me lius quod ilegunt saepius...
-                        </p>
-                        <div class="text-white">Alan Smith</div>
-                        <a href="#">info@demolink.org</a>
-                    </div>
-
-                </div>
-            </div>
-
-
-
-
-        </div>
-    </div>
-    <!--/Testimonials-->
-
-    <!--Our Team-->
-    <div class="container py-5">
-        <h3>Our team</h3>
-        <div class="row">
-            <div class="col-md-3">
-                <div>
-                    <a href="">
-                        <img src="images/our-team/team-1.jpg" alt="" class="rounded-left"/>
-                    </a>
-                    
-                </div>
-                <p>Emily Cramer</p>
-                <p>Duis in libero hendrerit magna con sectetur. tristique! Suspendisse.</p>
-            </div>
-            <div class="col-md-3">
-                <div>
-                    <a href="">
-                        <img src="images/our-team/team-2.jpg" alt="" />
-                    </a>
-                    
-                </div>
-                <p>Emily Cramer</p>
-                <p>Duis in libero hendrerit magna con sectetur. tristique! Suspendisse.</p>
-            </div>
-            <div class="col-md-3">
-                <div>
-                    <a href="">
-                        <img src="images/our-team/team-3.jpg" alt="" />
-                    </a>
-                    
-                </div>
-                <p>Emily Cramer</p>
-                <p>Duis in libero hendrerit magna con sectetur. tristique! Suspendisse.</p>
-            </div>
-            <div class="col-md-3">
-                <div  >
-                    <a href="#" >
-                        <img src="images/our-team/team-4.jpg" alt="" class="rounded-right" />
-                    </a>
-                    
-                </div>
-                <p>Emily Cramer</p>
-                <p>Duis in libero hendrerit magna con sectetur. tristique! Suspendisse.</p>
-            </div>
-
-        </div>
-        
-    </div> <!--/Our team-->
+    <!--/details-->
     <!--footer-->
     <div class="container-fluid " id=footer>
         <div class="container justify-content-end">
             <ul id="footer-menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </div>
         <div id="copyright">
-            ice-cream &copy; 2019 | <a href="#" class="privacy-policy"> PRIVACY POLICY</a>
+            ice-cream &copy; 2020 | <a href="#" class="privacy-policy"> PRIVACY POLICY</a>
         </div>
     </div>
     <!--/footer-->
@@ -258,6 +160,139 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v4.7.6.js"></script>
+
+    <!--handlebars-->
+    <!--handebar template-->
+    <!--handlebar template details-->
+    <script id="details-template" type="text/x-handlebars-template">
+        <div>
+        {{#each data}}
+         <div class="p-4 justify-content-center">
+             <h2 class="text-dark font-weight-bold my-4">{{name}}</h2>
+             <div>
+                 {{{description}}}           
+             </div>
+         </div>
+         {{/each}}
+         
+         </div> 
+
+     </script>
+    <!--/handlebar template details-->
+
+    <!--our vision handlebar-->
+    <script id="vision-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class="row my-2">
+            <div class="col-md-4">
+                <img src="{{thumbpath}}" class=" img-rounded" />
+            </div>
+            <div class="col-md-8">
+              <a onclick="loadData('visions/{{id}}', '#details', '#vision-detail-template')" href="#" ><h4>{{name}}</h4></a>  
+                <div>
+                    {{summary}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+      </script>
+    <!--/our vision handlebar-->
+
+
+    <!--details vision-->
+    <script id="vision-detail-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class="m-2">
+            <h2 class="font-weight-bold text-dark m-3">{{name}}</h2>
+            <div class="row m-3">
+                <div class="col-md-4 p-2">
+                    <img src="{{imagepath}}" alt="" class="img-rounded"> 
+                </div>
+                <div class="col-md-8">
+                    {{{description}}}
+                </div>
+   
+            </div>
+        </div>
+        {{/each}}
+      </script>
+    <!--/details vision-->
+
+    <!--testimo handlebar-->
+    <script id="testimo-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/quot.png" alt="">
+                </div>
+                <div class="col-10">
+                    <p>
+                        {{summary}}
+                    </p>
+                    <div class="text-white">{{name}}</div>
+                    <a href="#">{{email}}</a>
+                </div>
+
+            </div>
+        </div>
+        {{/each}}
+      </script>
+    <!--/testimo handlebar-->
+
+    <!--testimo handlebar-->
+    <script id="team-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class="col-md-3">
+            <div>
+                <a onclick="loadData('team/{{id}}', '#details', '#vision-detail-template')" href="#">
+                    <img src="{{thumbpath}}" alt="" class="img-rounded"/>
+                </a>
+                
+            </div>
+            <p class="font-weight-bold text-dark m-2 ">{{name}}</p>
+            <p class="m-2">{{summary}}.</p>
+        </div>
+        {{/each}}
+      </script>
+    <!--/testimo handlebar-->
+
+
+    <!--scripts get api-->
+    <script>
+        $(document).ready(function () {
+            // api about us
+
+            //api vision
+            loadData('visions', '#vision-model', '#vision-template');
+            loadData('testimonials', '#testimo-model', '#testimo-template');
+            loadData('team', '#team', '#team-template');
+
+        });
+
+        // funtion load data
+        function loadData(request, targetID, sourceID) {
+            $.ajax({
+                url: 'http://web1-api.herokuapp.com/api/' + request,
+                cache: false,
+                success: function (data) {
+                    let jsonData = {
+                        data: data
+                    };
+                    console.log(data);
+                    let target = $(targetID);
+                    let source = $(sourceID).html();
+                    var template = Handlebars.compile(source);
+                    $(target).html(template(jsonData));
+
+
+                }
+
+            });
+        }
+    </script>
+
 </body>
 
 </html>
