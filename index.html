@@ -169,6 +169,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/handlebars-v4.7.6.js"></script>
+    <script src="js/1988285.js"></script>
 
     <!--handlerbar script-->
     <!--handlebar template products-->
@@ -238,26 +239,7 @@
 
         });
 
-        // funtion load data
-        function loadData(request, targetID, sourceID) {
-            $.ajax({
-                url: 'https://web1-api.herokuapp.com/api/' + request,
-                cache: false,
-                success: function (data) {
-                    let jsonData = {
-                        data: data
-                    };
-                    console.log(data);
-                    let target = $(targetID);
-                    let source = $(sourceID).html();
-                    var template = Handlebars.compile(source);
-                    $(target).html(template(jsonData));
-
-
-                }
-
-            });
-        }
+        
     </script>
 
 </body>

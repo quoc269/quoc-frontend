@@ -107,20 +107,24 @@ a.privacy-policy{
 /*small-banner*/
 #small-banner{
     background:url(../images/bg_slider.gif) 0 0 repeat;
-    height: 30px;
+    height: 10px;
    
 }
 /*/small-banner*/
 
 /*menu galerry*/
+/*
 #gl-menu img{
     width: 250px;
     height: 250px;
     padding:10px;
     border-radius:14px;
-}
+} */
 #gallery h3{
     font: 60px 'Changa One', cursive;
-    margin: 10px;
     color:black;
+}
+#gallery ul li{
+    margin: 0;
+    padding: 0;
 }

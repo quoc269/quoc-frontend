@@ -12,6 +12,8 @@
     <link rel="shorcut icon" href="images/favicon.ico " type="image/x-icon" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa+One" type="text/css" />
     <link rel="stylesheet" href="css/1988285-blog.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -26,7 +28,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end " id="menu">
                 <ul class="navbar-nav  mt-2 mt-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
 
@@ -36,7 +38,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="menu.html">Menu</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
@@ -68,118 +70,36 @@
     <!--Blog-->
     <div class="container py-5" id="blog">
         <div class="row">
+           
             <div class="col-md-8">
                 <h3>Blog</h3>
-                <div>
-                    <h4>Donec eu elit in nisi placerat</h4>
-                    <p>by Super User in <a href="#">Blog. Vivamus luctus lectus sit</a> on Thu, Nov 12, 2015, GMT+7
-                        Hits: 210 <a href="#">Comments (4)</a> </p>
-                    <div class="row py-2">
-                        <div class="col-md-5">
-                            <div>
-                                <img src="images/blog/blog-img1.jpg" />
-                            </div>
-
-                        </div>
-                        <div class="col-md-7">
-                            <div>
-                                In neque arcu, vulputate vitae dignissim id, placerat adipiscing lorem. Nulla
-                                consectetur adipiscing metus vel pulvinar. Aenean molestie mauris non diam tincidunt
-                                faucibus. Integer odio dui, iaculis in congue eleifend, faucibus nec diam. Maecenas ac
-                                est odio, at dignissim dolor. Quisque gravida, purus vitae varius sagittis, odio erat
-                                venenatis nibh, eu interdum diam est eu sem. Vivamus luctus lectus sit amet lectus
-                                egestas cursus.
-
-                            </div>
-                            <div>
-                                <a href="" class="read-more">Read more</a>
-                            </div>
-
-                        </div>
-                    </div>
+        <div id="blogs-details">
+                <div id="blogs">
+                   
                 </div>
-                <div>
-                    <h4>Donec eu elit in nisi placerat</h4>
-                    <p>by Super User in <a href="#">Blog. Vivamus luctus lectus sit</a> on Thu, Nov 12, 2015, GMT+7
-                        Hits: 210 <a href="#">Comments (4)</a> </p>
-                    <div class="row py-2">
-                        <div class="col-md-5">
-                            <div>
-                                <img src="images/blog/blog-img2.jpg" />
-                            </div>
+                
+               
 
-                        </div>
-                        <div class="col-md-7">
-                            <div>
-                                In neque arcu, vulputate vitae dignissim id, placerat adipiscing lorem. Nulla
-                                consectetur adipiscing metus vel pulvinar. Aenean molestie mauris non diam tincidunt
-                                faucibus. Integer odio dui, iaculis in congue eleifend, faucibus nec diam. Maecenas ac
-                                est odio, at dignissim dolor. Quisque gravida, purus vitae varius sagittis, odio erat
-                                venenatis nibh, eu interdum diam est eu sem. Vivamus luctus lectus sit amet lectus
-                                egestas cursus.
+                <!--pagination-->
+                <div id="blogs-pagination">
 
-                            </div>
-                            <div>
-                                <a href="" class="read-more">Read more</a>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
-                <div>
-                    <h4>Donec eu elit in nisi placerat</h4>
-                    <p>by Super User in <a href="#">Blog. Vivamus luctus lectus sit</a> on Thu, Nov 12, 2015, GMT+7
-                        Hits: 210 <a href="#">Comments (4)</a> </p>
-                    <div class="row py-2">
-                        <div class="col-md-5">
-                            <div>
-                                <img src="images/blog/blog-img3.jpg" />
-                            </div>
-
-                        </div>
-                        <div class="col-md-7">
-                            <div>
-                                In neque arcu, vulputate vitae dignissim id, placerat adipiscing lorem. Nulla
-                                consectetur adipiscing metus vel pulvinar. Aenean molestie mauris non diam tincidunt
-                                faucibus. Integer odio dui, iaculis in congue eleifend, faucibus nec diam. Maecenas ac
-                                est odio, at dignissim dolor. Quisque gravida, purus vitae varius sagittis, odio erat
-                                venenatis nibh, eu interdum diam est eu sem. Vivamus luctus lectus sit amet lectus
-                                egestas cursus.
-
-                            </div>
-                            <div>
-                                <a href="" class="read-more">Read more</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
+                <!--/pagination-->
             </div>
-
-            <div class="col-md-4">
+        </div>
+            <div class="col-md-4"  id="liBlog">
                 <div>
                     <h3>Categories</h3>
-                    <ul>
-                        <li><a href="#">Donec eu elit in nisi</a></li>
-                        <li><a href="#">In neque arcu vulputate</a></li>
-                        <li><a href="#">In neque arcu vulputate</a></li>
-                        <li><a href="#">In neque arcu vulputate</a></li>
-                        <li><a href="#">In neque arcu vulputate</a></li>
-                        <li><a href="#">In neque arcu vulputate</a></li>
+                    <ul id="categories">
+                       
+                        
                     </ul>
                 </div>
                 <div>
                     <h3>Archiver</h3>
-                    <ul>
-                        <li><a href="#">Donec eu elit in nisi</a></li>
-                        <li><a href="#">In neque arcu vulputate</a></li>
-                        <li><a href="#">In neque arcu vulputate</a></li>
-                        <li><a href="#">In neque arcu vulputate</a></li>
-                        <li><a href="#">In neque arcu vulputate</a></li>
-                        <li><a href="#">In neque arcu vulputate</a></li>
+                    <ul id="archives">
+                       
+                        
                     </ul>
                 </div>
             </div>
@@ -187,14 +107,15 @@
 
     </div>
     <!--/Blog-->
+
     <!--footer-->
     <div class="container-fluid " id=footer>
         <div class="container justify-content-end">
             <ul id="footer-menu">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" >Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#" >Menu</a></li>
+                <li><a href="#" class="active">Blog</a></li>
                 <li><a href="#">Contacts</a></li>
             </ul>
         </div>
@@ -203,3 +124,260 @@
         </div>
     </div>
     <!--/footer-->
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v4.7.6.js"></script>
+    <script src="js/1988285.js" ></script>
+    <script src="js/handlebars-pagination-helper.js"></script>
+
+    <!--Blog-->
+    <!--Blog template-->
+    <script id="blogs-template" type="text/x-handlebars-template">
+       {{#each data.data}}
+        <div>
+            <h4>{{name}}</h4>
+            <p>by {{author}} <a onclick="loadBlog('blogs/categories/{{categoryId}}')" href="#">{{category.name}}</a> on {{date}}
+                Hits: 210 <a onclick="loadData('blogs/{{id}}', '#blogs-details', '#blogs-details-template')"  href="#">Comments ({{comments.length}})</a> </p>
+            <div class="row py-2">
+                <div class="col-md-5">
+                    <div>
+                        <img src="{{thumbpath}}" />
+                    </div>
+
+                </div>
+                <div class="col-md-7">
+                    <div>
+                        {{summary}}
+                    </div>
+                    <div>
+                        <a onclick="loadData('blogs/{{id}}', '#blogs-details', '#blogs-details-template')"  href="#" class="read-more">Read more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script> <!--/blog template-->
+
+    <!--Blog detail template-->
+    <script id="blogs-details-template" type="text/x-handlebars-template">
+        {{#each data}}
+         <div>
+             <h4>{{name}}</h4>
+             <p>by {{author}} <a    href="#"> {{category.name}}</a> on {{date}}
+                 Hits: 210 <a href="#">Comments ({{comments.length}})</a> </p>
+             <div class="py-2">                 
+                     <div class="float-left mr-3 mb-3">
+                         <img src="{{thumbpath}}" />
+                     </div>                                
+                     <div  >
+                         {{{description}}}
+                    </div>             
+            </div>
+         </div>
+         <div class="py-3">
+             <h4 class="text-dark">Leae your commnets</h4>
+             <h4 class="text-dark">Post comment as guest</h4>
+             <div class="bg-dark text-uppercase p-1">Comments({{comments.length}})</div>
+             <!--form comment-->
+             <form method="POST" id="frm-comment" onsubmit="return addComment()" data-blog-id="{{id}}">  
+             <div class="form-group my-2">                    
+                <div class="row">
+                  <div class="form-group col">
+                    <label for="name">Name (required)</label>
+                    <input type="text"
+                      class="form-control" name="txtname" id="name"  placeholder="" required>                   
+                  </div>
+                  <div class="form-group col">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="txtemail" id="email"  placeholder="" required>                    
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="comment"></label>
+                  <textarea class="form-control" name="txtcomment" id="comment" rows="3" required></textarea>
+                </div>  
+                <div class="row ml-0">
+                    <div class="form-check form-check-inline col">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="agree" id="agree" value="false" required>
+                      Agree to Term and Conditions
+                      </label>
+                    </div>
+                    <div class="col text-right">
+                        <button type="submit" class="btn btn-link">Submit Comment</button>
+
+                    </div>                    
+                </div>        
+                </div>
+            </form><!--/form comment-->
+              
+             {{#each comments}}
+             <div>
+                 <div>
+                    <small><strong>{{name}}</strong>  {{date}}</small>
+                 </div>
+                 <div>
+                     {{summary}}
+                 </div>
+                
+             </div>
+         </div>
+         <hr>
+         {{/each}}
+        
+         {{/each}}
+    </script> <!--/blog detail template-->
+
+    <!--Categories template-->
+    <script id="cate-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <li><a onclick="loadBlog('blogs/categories/{{id}}')"  href="#">{{name}}</a></li>
+       {{/each}}
+        
+    </script>  <!--Categories template-->
+
+    <!--Archives template-->
+    <script id="arc-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <li><a onclick="loadBlog('blogs/archives/{{month}}-{{year}}')"  href="#">{{monthString}}, {{year}}  </a></li>
+        {{/each}}
+       
+        
+    </script>  <!--/Archives template-->
+
+    <!--Blogs pagination-->
+    <script id="blogs-pagination-template" type="text/x-handlebars-template">
+        {{#pagination currentPage pageCount size api}}
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                {{#unless startFromFirstPage}}
+              <li class="page-item">
+                <a onclick="loadBlog('{{api}}',1)" class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              {{/unless}}
+
+              {{#each pages}}
+                {{#if isCurrent}}
+              <li class="page-item active"><a onclick="loadBlog('{{api}}',{{page}})"  class="page-link" href="#">{{page}}</a></li>
+              {{else}}             
+              <li class="page-item">
+                  <a  onclick="loadBlog('{{api}}',{{page}})" class="page-link" href="#">{{page}}</a>
+                </li>
+              {{/if}}
+              {{/each}}
+
+              {{#unless endAtLastPage}}
+              <li class="page-item">
+                <a onclick="loadBlog('{{api}}',{{pageCount}})" class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+              {{/unless}}
+            </ul>
+          </nav>
+          {{/pagination}}
+    </script>
+
+    <!--/Blogs pagination-->
+    <script>
+        $(document).ready(function () {
+            //Blog nav api handlebar
+            loadBlog('blogs');           
+            loadData('blogs-categories', '#categories', '#cate-template');  
+            loadData('blogs-archives', '#archives', '#arc-template');     
+
+        });   
+        function loadBlog(request, page=1) {
+        $.ajax({
+        url: "https://web1-api.herokuapp.com/api/"+request+"?page="+page,
+        cache: false,
+        success: function (data) {
+            let jsonData = {
+                data: data
+            };
+            console.log(data);
+            let target = $('#blogs');
+            let source = $('#blogs-template').html();
+            var template = Handlebars.compile(source);
+            $(target).html(template(jsonData));
+
+            jsonData = {
+                currentPage: page,
+                size:2,
+                pageCount: data.pageCount,
+                api: request
+
+            }
+
+            target= $("#blogs-pagination");
+            source = $('#blogs-pagination-template').html();
+            template = Handlebars.compile(source);
+            $(target).html(template(jsonData));
+
+        }
+
+        });     
+       
+     
+    }
+
+    function loadDetails(id) {
+        loadData('blogs/'+id, '#blogs-details', '#blogs-details-template');
+    }
+
+    function addComment(){
+            let formData = {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                comment:$('#comment').val(),
+                blogId: $('#frm-comment').data('blogId'),
+                agree: $('#agree').prop('checked')
+            }
+
+            $.ajax({
+            url: "https://web1-api.herokuapp.com/users/authenticate",
+            dataType: "json",
+            type : "POST",
+            data: {
+                username: 'test',
+                password: '1c3cr3@m' //icecr3@m
+            },
+            success : function(r) {
+            $.ajax({
+            url: "https://web1-api.herokuapp.com/users/comment",
+            dataType: "json",
+            type : "POST",
+            headers: {
+                "Authorization": 'Bearer ' + r.token
+            },
+            data: formData,
+            success : function(r) {
+                loadDetails(formData.blogId);
+            },
+            error: function(xhr, status, error) {
+                window.alert(error);
+            }
+        });
+                        
+            }
+        });
+
+            return false;
+        }
+        
+
+        
+    </script>
+
+</body>
+
+</html>

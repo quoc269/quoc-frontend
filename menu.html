@@ -12,6 +12,7 @@
     <link rel="shorcut icon" href="images/favicon.ico " type="image/x-icon" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa+One" type="text/css" />
     <link rel="stylesheet" href="css/1988285-menu.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -26,14 +27,14 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end " id="menu">
                 <ul class="navbar-nav  mt-2 mt-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
@@ -66,68 +67,21 @@
     </div>
     <!--/small-banner-->
     <!--Menu-->
-    <div class="container-fluid">
-        <div class="container" id="gallery">
-            <h3>Menu</h3>
-            <p>Filter by category:</p>
-
-
-
-            <div class="container" id="bar-nav">
-                <ul class="nav align-content-start ">
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Show all</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">First Category</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Second Category</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Third Category</a>
-                    </li>
-
-
+    <div class="container py-5 " id="gallery">
+        
+            <h3 class="text-dark">Menu</h3>
+            <p class="font-weight-bold">Filter by category:</p>
+                <ul class="nav" id="gnav">
+                    
                 </ul>
-            </div>
-            <div class="container" id="gl-menu">
-                <div class="row m-3">
-                    <div class="col-md-3">
-                        <img src="images/gallery/gallery-thumb1.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/gallery/gallery-thumb2.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/gallery/gallery-thumb3.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/gallery/gallery-thumb4.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                </div>
-                <div class="row m-3">
-                    <div class="col-md-3 ">
-                        <img src="images/gallery/gallery-thumb6.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                    <div class="col-md-3 ">
-                        <img src="images/gallery/gallery-thumb7.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                    <div class="col-md-3 ">
-                        <img src="images/gallery/gallery-thumb8.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                    <div class="col-md-3 ">
-                        <img src="images/gallery/gallery-thumb9.jpg" alt="" class="img-thumbnail" />
-                    </div>
-                </div>
-                <div class="row m-3">
-                    <div class="col-md-3">
-                        <img src="images/gallery/gallery-thumb10.jpg" alt="" class="img-thumbnail" />
-                    </div>
+            
+                <div class="row" id="img-model">
+                   
+                    
 
                 </div>
-            </div>
-        </div>
+            
+        
 
 
     </div> <!--/Menu-->
@@ -154,6 +108,56 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v4.7.6.js"></script>
+    <script src="js/1988285.js" ></script>
+
+    <!--nav menu-->
+    <!--nav template-->
+    <script id="gl-template" type="text/x-handlebars-template">
+        <li class="nav-item">   
+            <a class="nav-link disabled pl-0" onclick="loadGallery(this, {{id}})" href="#">Show all</a> <!--hoi co giao ve tu khoa this, trong part5 phan xu ly ham cho menu-->
+        </li>
+       
+        {{#each data}}
+        <li class="nav-item">
+            <a class="nav-link " onclick="loadGallery(this, {{id}})"  href="#">{{name}}</a>
+        </li>
+        {{/each}}
+        
+    </script> <!--/nav template-->
+
+    <script id="img-template" type="text/x-handlebars-template">
+           
+        {{#each data}}
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <img src="{{thumbpath}}" alt="" class="img-thumbnail" />
+        </div>
+        {{/each}}
+        
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            //menu nav api handlebar
+            loadData("gallery-categories", "#gnav", "#gl-template");
+            loadData("gallery", "#img-model","#img-template");        
+
+        });
+
+        function loadGallery (link,id) {
+            if(id){
+                loadData("gallery/categories/"+id, "#img-model", "#img-template");
+            }else{
+                loadData("gallery", "#img-model","#img-template");
+            }
+            $('#gnav .nav-link').removeClass('disabled');
+            $(link).addClass("disabled");
+        }
+
+
+        
+    </script>
 </body>
 
 </html>

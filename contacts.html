@@ -12,6 +12,10 @@
     <link rel="shorcut icon" href="images/favicon.ico " type="image/x-icon" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa+One" type="text/css" />
     <link rel="stylesheet" href="css/1988285-contacts.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" type="text/css">
+    
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
 </head>
 
 <body>
@@ -26,7 +30,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end " id="menu">
                 <ul class="navbar-nav  mt-2 mt-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
 
@@ -39,7 +43,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="contacts.html">Contacts</a>
                     </li>
 
@@ -69,82 +73,86 @@
     <div class="container-fluid" id="contacts">
         <div class="container">
             <h3>Contacts</h3>
-            <div class="container" id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22164.342931473995!2d106.6189316680738!3d10.877008177199935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1599914156697!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div id="map" class="map">
+            <script src="js/map.js"></script>
             </div>
         </div>
-        <div class="row">
+        <div class="container">
+            <div class="row">
 
-            <div class="col-md-4">
-                <h3>Address:</h3>
-                <div>
-                    <p>227 Nguyen Van Cu Street
-                        District 5</p>
-                    <p>Hochiminh City, Vietnam</p>
+                <div class="col-md-4">
+                    <h3 class="my-3">Address:</h3>
+                    <div>
+                        <p>227 Nguyen Van Cu Street
+                            District 5</p>
+                        <p>Hochiminh City, Vietnam</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <h3>Phones:</h3>
-                <div>
-                    <p>+1 800 559 6580</p>
-                    <p>+1 504 889 9898</p>
+                <div class="col-md-4">
+                    <h3 class="my-3">Phones:</h3>
+                    <div>
+                        <p>+1 800 559 6580</p>
+                        <p>+1 504 889 9898</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <h3>E-mail: </h3>
-                <div>
-                    <p>mail@demolink.org</p>
-                    <p> Illinois 121164</p>
+                <div class="col-md-4">
+                    <h3 class="my-3">E-mail: </h3>
+                    <div>
+                        <p><a href="#">mail@demolink.org</a></p>
+                        <p><span class="font-italic">Dowload Information as:</span> <a href="#">vCard</a> </p>
+                    </div>
                 </div>
-            </div>
-
-
-        </div> <!--/address-->
+    
+    
+            </div> <!--/address-->
+        </div>
+       
 
         <!--Miscell-->
-        <div>
+        <div class="container" >
             <h3>Miscellaneous information:</h3>
             <div>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                 Velit numquam doloribus corporis aliquam, ab architecto magnam rerum neque laudantium, voluptas itaque pariatur
                  at aut voluptatum cupiditate libero perspiciatis, esse eaque.
             </div>
-            <p>Send an email. All fields with an * are required.</p>
-            <div>
-                <div class="container" id="frm-contacts">
-                    <div class="row" >
-                        <div class="col-md-4">
-                            <label for="un">Name *</label> <br>
-                            <input type="text" id="un" name="un" />
+            <p class="font-italic">Send an email. All fields with an * are required.</p>
+            <!--form contact-->
+            <form action="#" method="POST" id="form-contact">
+                <div class="form-group py-2">
+                    <div class="row">
+                        <div class="form-group col">
+                          <label for="name">Name *</label>
+                          <input type="text"
+                            class="form-control" name="name" id="name"  placeholder="" required>                          
                         </div>
-                        <div class="col-md-4">
-                            <label for="em">Email *</label> <br>
-                            <input type="text" id="em" name="em" />
+                        <div class="form-group col">
+                          <label for="email">Email *</label>
+                          <input type="email" class="form-control" name="email" id="email"  placeholder="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>                          
                         </div>
-                        <div class="col-md-4">
-                            <label for="sj">Subject *</label> <br>
-                            <input type="text" id="sj" name="sj" />
+                        <div class="form-group col">
+                          <label for="sbj">Subject *</label>
+                          <input type="text"
+                            class="form-control" name="subject" id="sbj"  placeholder="" required>                          
                         </div>
-                    </div>
-                    <div class="container"> 
-                        <label for="txtaContacts">Mesages *</label> <br>
-                        <textarea rows="10" cols="120" name="txaContacts" id="txaContacts" ></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-7">
 
                     </div>
-                    <div class="col-md-3">
-                        <label for="ck">Send copy to yourself</label> 
-                        <input type="checkbox" id="ck" name="ck" /> 
+                    <div class="form-group">
+                      <label for="comment"></label> Message *
+                      <textarea class="form-control" name="message" id="comment" rows="3" required ></textarea>
                     </div>
-                    <div class="col-md-2">
-                        <a href="#">Send Email</a>
+                    <div class="row justify-content-end">
+                        <div class="form-check form-check-inline">
+                          <label class="form-check-label"> <small>Send a copy to yourself</small>
+                            <input type="checkbox" class="form-check-input" name="copy" id="copy" value="false" >                            
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-link">Send Email</button>
                     </div>
-                    
                 </div>
-            </div>
+               
+            </form>
+            <!--/form contact-->
         </div><!--/Miscell-->
     </div> <!--/contacts-->
 
@@ -152,24 +160,70 @@
     <div class="container-fluid " id=footer>
         <div class="container justify-content-end">
             <ul id="footer-menu">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" >Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#" class="active">Contacts</a></li>
             </ul>
         </div>
         <div id="copyright">
-            ice-cream &copy; 2019 | <a href="#" class="privacy-policy"> PRIVACY POLICY</a>
+            ice-cream &copy; 2020 | <a href="#" class="privacy-policy"> PRIVACY POLICY</a>
         </div>
     </div>
     <!--/footer-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v4.7.6.js"></script>
+    <script src="js/1988285.js" ></script>
+
+    <script>
+        $(document).ready(() =>{
+            $('#form-contact').on('submit',(e) => {
+                e.preventDefault();
+
+                $.ajax({
+            url: "https://web1-api.herokuapp.com/users/authenticate",
+            dataType: "json",
+            type : "POST",
+            data: {
+                username: 'test',
+                password: '1c3cr3@m' //icecr3@m
+            },
+            success : function(r) {
+            var formData = $('#form-contact').serialize();
+            $.ajax({
+            url: "https://web1-api.herokuapp.com/users/send",
+            dataType: "json",
+            type : "POST",
+            headers: {
+                "Authorization": 'Bearer ' + r.token
+            },
+            data: formData,
+            success : function(r) {
+                alert(r.message);
+                console.log(r);
+            },
+            error: function(xhr, status, error) {
+                window.alert(error);
+            }
+             });
+                        
+            }
+        });
+
+            
+
+            });
+
+        });
+    </script>
+
+
 </body>
 
 </html>
